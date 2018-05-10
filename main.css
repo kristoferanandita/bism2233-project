@@ -18,15 +18,42 @@ z-index:2;
 }
 #content-top {
 text-align:center;
-height: 620px;
+height: 580px;
+display: flex;
+align-items: center;
+text-align: center;
+background-image: url("images/top-background.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position: center;   
+
 }
-#content-middle {
+
+}
+.jumbo-one {
+width: 70%;
+height: 70%;
+background-color: #8be4d2;
+}
+#content-middle-one {
 height: 500px;
 border:1px solid black;
 text-align: center;
 }
+#content-middle-two {
+text-align:center;
+height: 580px;
+display: flex;
+align-items: center;
+text-align: center;
+background-image: url("images/middle-background.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position: center;    
+}
 #header {
-height:350px;
+height:200px;
+background-color:gainsboro;
 }
 .banner-1 {
 background-image: url("images/content-2.jpg");
@@ -38,6 +65,9 @@ background-position: bottom;
 background-color:white;
 }
 .right-content {
-background-color: black;
+background-color: mediumturquoise;
     
+}
+.social-media {
+    height:70%;
 }
