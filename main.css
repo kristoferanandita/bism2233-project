@@ -35,9 +35,23 @@ width: 70%;
 height: 70%;
 background-color: #8be4d2;
 }
+
+#buttons-signup {
+display: flex;
+flex-direction: column;
+padding: 50px;
+
+}
+.button-home {
+background-color:aliceblue;
+border: none;
+margin:1px;
+box-shadow: 1px 1px 5px;
+
+}
 #content-middle-one {
 height: 500px;
-border:1px solid black;
+
 text-align: center;
 }
 #content-middle-two {
@@ -47,7 +61,7 @@ display: flex;
 align-items: center;
 text-align: center;
 background-image: url("images/middle-background.png");
-background-size:contain;
+background-size: contain;
 background-repeat:no-repeat;
 background-position: center;    
 }
@@ -69,5 +83,8 @@ background-color: mediumturquoise;
     
 }
 .social-media {
-    height:70%;
+height:70%;
+}
+.legal-stuff {
+text-align: center;
 }
