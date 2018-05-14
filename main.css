@@ -1,8 +1,11 @@
 body {
 font-family: 'Raleway', sans-serif;
+min-height: 100%;
 }
 .container-fluid {
-height:100px;
+min-height:500px;
+margin-bottom: 100px;
+
 }
 .home {
 padding-right:0px;
@@ -29,17 +32,24 @@ background-position: center;
 #buttons-signup {
 padding-left:100px;
 }
+.tests{
+margin: 0px 0px 0px 0px;
+background-color: white;
+padding: 20px;
+}
+.stset{
+margin: 0px 0px 0px 0px;
+background-color: white;
+padding: 20px;
+}
 #drive-form {
-margin: 50px 0px 50px 0px;
-background-color: #8be4d2;
-padding: 50px;
-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+background-color:	#F8F8FA;
+padding: 20px;
 }
 #ride-form {
-margin: 50px 0px 50px 0px;
-background-color: #8be4d2;
-padding: 50px;
-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+background-color: 	#F8F8FA;
+padding: 20px;
 }
 .buttonz img {
 transition:all .2s ease-in-out;
@@ -53,6 +63,7 @@ border: none;
 margin:1px;
 box-shadow: 1px 1px 5px;
 }
+
 #content-middle-one {
 height: 500px;
 text-align: center;
@@ -68,10 +79,7 @@ background-size: contain;
 background-repeat:no-repeat;
 background-position: center;    
 }
-#header {
-height:200px;
-background-color:gainsboro;
-}
+
 .banner-1 {
 background-image: url("images/content-2.jpg");
 background-size:cover;
@@ -85,9 +93,8 @@ background-color:white;
 background-color: mediumturquoise;
     
 }
-.social-media {
-height:70%;
-}
-.legal-stuff {
-text-align: center;
+#footer{
+height:100px;
+width:100%;
+background-color: white;
 }
