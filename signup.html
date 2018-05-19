@@ -105,8 +105,12 @@ $(document).ready(function(){
         x = 1
         $("#drive-form").toggle(50);
         $("#ride-form").hide();
-        console.log(x);
-        if (x==1){
+        
+        if ( $("#drive-form").css('display') == 'none' ){
+            c = false
+        };
+        console.log(c);
+        if (x==1 && y==0){
             $(".tests").css("background", "lightgray")
             $(".stset").css("background", "white");
         } else {

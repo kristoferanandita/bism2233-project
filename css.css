@@ -1,0 +1,146 @@
+body{
+	font-family: "Raleway";
+}
+
+
+.menu{
+	background-color: #ffffff;
+	height: 8vh;
+}
+.footer {
+    text-align: center;
+    background-color:#D8D8D8;
+    height:300px;
+}
+.content{
+    margin-top:8vh;
+    margin-left: 13%; /* Same as the width of the sidebar */
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px -50px;
+	z-index: -1;
+    width:87%;
+    font-size: 12px;
+}
+
+.header{
+	z-index: 999;
+}
+
+#opt {
+    font-size:12px;
+}
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#myText {
+    font-size:12px;
+}
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 13%; /* Set the width of the sidebar */
+    position:absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 8vh; /* Stay at the top */
+    left: 0;
+    background-color: #8be4d2; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    text-decoration-color:
+}
+.sidenav a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    background-color: #f8f8f8;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.main {
+    
+    padding: 0px;
+    height:100vh; 
+}   
+#map {
+        height: 40vh;
+}
+.btn:active {
+    background-color:#8be4d2;
+    color:black;
+    font-weight:600;
+    outline: none;
+    text-decoration: none;
+}
+.main input:focus {
+    outline:none;
+}
+.row {
+    margin-bottom: 5px;
+}
+.title {
+    margin:0px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    padding:5px;
+    padding-top:10px;
+    background-color:#484848;
+    color: white;
+    border-radius: 0px;
+    
+    
+}
+.lefty {
+    
+    margin-top:0px;
+    padding-left:5px;
+    padding-right:2.5px;
+}
+.cont {
+    border: 1px solid #484848;
+    padding:10px;
+    background-image: radial-gradient(#FFFFFF 1%,#f8f8f8 99%);
+    
+}
+
+.righty {
+
+    margin-top:0px;
+    padding-left:2.5px;
+    padding-right:5px;
+}
+.drivers {
+    height:100px;
+    display:flex;
+}
+.driver-detail {
+    padding-left:30px;
+    padding-top:20px;
+    text-decoration: none;
+}
+#all-drivers a {
+    color:black;
+}
+#all-drivers a:hover {
+    text-decoration: none;
+    
+}
+.drivers:hover {
+    background-color:#E8E8E8;
+    text-decoration: none;
+}
+
