@@ -1,0 +1,78 @@
+body{
+	font-family: montserrat;
+}
+
+.menu{
+	background-color: #ffffff;
+	height: 8vh;
+	width: 100%;
+}
+
+.box-login{
+	min-height: 200px;
+	width: 35%;
+	background: rgba(255, 255, 255, 0.7);
+	margin: auto;
+	padding: 30px 0px 20px 0px;
+	border-radius: 5px;
+}
+
+.container-bg-reg{
+	background: #8be4d2;
+	min-height: 92vh;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.container-bg-reg h1{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.box-registration{
+	min-height: 350px;
+	width: 50%;
+	background: rgba(255, 255, 255, 0.7);
+	margin: auto;
+	padding: 20px 0px 35px 0px;
+	border-radius: 5px;
+}
+
+.box-registration h1,h2,h3{
+	text-align: center;
+}
+
+.options{
+	margin: 5px 0px 0px 0px;
+}
+
+.option-rider{
+	font-size: 3.5rem;
+	font-weight: 900;
+	color: #31B7D1;
+}
+
+.option-driver{
+	font-size: 3.5rem;
+	font-weight: 900;
+	color: #3BBDA6;
+}
+
+.buttonz img {
+	transition:all .2s ease-in-out;
+}
+
+.buttonz img:hover {
+	transform: scale(1.1); 
+}
+
+.field{
+	width: 75%;
+	margin: auto;
+}
+
+.button{
+	font-size: 1.1rem;
+	width: 30%;
+	height: 40px;
+}
