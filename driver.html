@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="css.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+		<title>Unidrives - Driver</title>
+	</head>
+
+	<body>
+	
+		    <nav class="navbar navbar-expand-md navbar-light menu header fixed-top">
+			    <a class="navbar-brand abs" href="#"><img src="img/logo-unidrives.png"  height="120px"></a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="navbar-collapse collapse" id="collapsingNavbar">
+			        <ul class="navbar-nav ml-auto">
+			            <li class="nav-item">
+			                <a class="nav-link" href="#">HELP</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="#">LOGIN</a>
+			            </li>
+			        </ul>
+			    </div>
+			</nav>
+    <div class="content container-fluid">
+        <div class="sidenav">
+            <center>
+                <img src ="img/icon-rider.png" width="60%" style="padding-bottom:5px;">
+                <h5><b>Rob Holding</b></h5>
+                <p>Driver</p>
+            </center>
+            <hr style="margin-bottom:0px;margin-top:20px;">
+            <a href="#" style="background-color:#f8f8f8;"><i class="fas fa-tachometer-alt"></i>  Dashboard</a>
+            <a href="#" ><i class="fas fa-rocket"></i>  Rides</a>
+            <a href="#"><i class="fas fa-archive"></i>  History</a>
+            <a href="#"><i class="fas fa-user-circle"></i>  Profile</a>
+            <hr style="margin:0px;">
+            <a href="#"><i class="fas fa-power-off"></i> Logout</a>
+        </div> 
+        <div class="row">
+            <div class='title col-sm'>
+                <center><h3>Dashboard</h3></center>
+            </div>    
+        </div>
+        <div class="main">
+            <div class="row">
+            <div class="lefty col-md-6">
+                <div class="cont shadow-sm p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md">
+                            <center><h3>Availability</h3></center>
+                        </div>    
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class='error-time'></div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01"  style="font-size:12px;">Time</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Hour</option>
+                                    <option value="12">12</option>
+                                    <option value="11">11</option>
+                                    <option value="10">10</option>
+                                    <option value="9">9</option>
+                                    <option value="8">8</option>
+                                    <option value="7">7</option>
+                                    <option value="6">6</option>
+                                    <option value="5">5</option>
+                                    <option value="4">4</option>
+                                    <option value="3">3</option>
+                                    <option value="2">2</option>
+                                    <option value="1">1</option>                                        
+                                </select>
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>Minute</option>
+                                    <option value="00">00</option>
+                                    <option value="05">05</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>     
+                                </select>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>AM/PM</option>
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="cont shadow-sm p-3 mb-5 bg-white rounded">
+                        <div class="row">
+                            <div class='col-md'>
+                                <center><h3>Rating</h3></center>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="all-ratings">
+                            <div class=" row" style="">
+                                <div class="your-rating">
+                                    <div class='actual-rating row'>
+                                        <i class="fas fa-star" style="color:gold;"></i>
+                                        <p>4.91</p>
+                                    </div>
+                                    <div class='row'>
+                                        <p>Your Current Rating</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="middly col-md-6">
+                    <div class="cont shadow-sm p-3 mb-5 bg-white rounded">
+                        <div class="row">
+                            <div class='col-md'>
+                                <center><h3>Earnings</h3></center>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="all-earnings" style="background-color:#FFFFFF;">
+                            <div class=" row" style='margin: 0px; margin-bottom:10px;'>  
+                                <div class="light-bar" style="background-color:#8be4d2;">
+                                </div>
+                                <div class="earnings">
+                                    
+                                     <div class="col-sm-6" style="padding-top:33px;color:limegreen;padding-left:20px;">
+                                        <h4><i class="fas fa-dollar-sign"></i> 6.33</h4>
+                                    </div>
+                                    <div class="col-sm-6" style="padding-top:25px;padding-left:100px;">
+                                        
+                                        <div class="row">
+                                            <h6><b>7.32 AM</b></h6>
+                                        </div>
+                                        <div class="row">
+                                            <p>Thursday</p>
+                                        </div>
+                                    </div>   
+                                </div>  
+                            </div>
+                            <div class=" row" style='margin: 0px; margin-bottom:10px;'>  
+                                <div class="light-bar" style="background-color:#8be4d2;">
+                                </div>
+                                <div class="earnings">
+                                    
+                                     <div class="col-sm-6" style="padding-top:33px;color:limegreen;padding-left:20px;">
+                                        <h4><i class="fas fa-dollar-sign"></i> 9.10</h4>
+                                    </div>
+                                    <div class="col-sm-6" style="padding-top:25px;padding-left:100px;">
+                                        
+                                        <div class="row">
+                                            <h6><b>7.32 AM</b></h6>
+                                        </div>
+                                        <div class="row">
+                                            <p>Thursday</p>
+                                        </div>
+                                    </div>   
+                                </div>  
+                            </div>
+                            <div class=" row" style='margin: 0px; margin-bottom:10px;'>  
+                                <div class="light-bar" style="background-color:#8be4d2;">
+                                </div>
+                                <div class="earnings">
+                                    
+                                     <div class="col-sm-6" style="padding-top:33px;color:limegreen;padding-left:20px;">
+                                        <h4><i class="fas fa-dollar-sign"></i> 3.90</h4>
+                                    </div>
+                                    <div class="col-sm-6" style="padding-top:25px;padding-left:100px;">
+                                        
+                                        <div class="row">
+                                            <h6><b>7.32 AM</b></h6>
+                                        </div>
+                                        <div class="row">
+                                            <p>Thursday</p>
+                                        </div>
+                                    </div>   
+                                </div>  
+                            </div>
+                            <div class=" row" style='margin: 0px; margin-bottom:10px;'>  
+                                <div class="light-bar" style="background-color:#8be4d2;">
+                                </div>
+                                <div class="earnings">
+                                    
+                                     <div class="col-sm-6" style="padding-top:33px;color:limegreen;padding-left:20px;">
+                                        <h4><i class="fas fa-dollar-sign"></i> 4.00</h4>
+                                    </div>
+                                    <div class="col-sm-6" style="padding-top:25px;padding-left:100px;">
+                                        
+                                        <div class="row">
+                                            <h6><b>7.32 AM</b></h6>
+                                        </div>
+                                        <div class="row">
+                                            <p>Thursday</p>
+                                        </div>
+                                    </div>   
+                                </div>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="righty col-md-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer container-fluid">
+                <!--Footer-->
+                <div class="row">
+                    <div class="footer-details col-md">
+                        <p>FAQ</p>
+                        <p>CONTACT</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="social-media col-md">
+                        <a href='#'><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="legal col-md">
+                        <a href='#'><p>Legal Terms </p></a>
+                        <h6> | </h6>
+                        <a href='#'><p>Privacy Policy</p></a>
+                        <h6> | </h6>
+                        <a href='#'><p>Terms &amp; Conditions</p></a>
+                    </div>
+                </div>    
+                
+            </div>
+	</body>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxnaq11J1ZmAOz5QZ5nRG2oDF9eegw5qQ&callback=initMap"
+    async defer></script>
+    <script>
+    </script>
+</html>
