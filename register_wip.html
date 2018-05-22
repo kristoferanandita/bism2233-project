@@ -4,6 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/css_wip.css">
         <title>UNIDRIVES - REGISTRATION</title>
     </head>
@@ -36,7 +39,7 @@
                         <center>
                             <h2 class="option-rider">RIDER</h2>
                             <div class="buttonz">
-                            <a href="#" id="btn-rider"><img src="img/icon-rider.png" height="170px" width="190px"></a>
+                            <img src="img/icon-rider.png" height="170px" width="190px">
                             </div>
                         </center>
                     </div>
@@ -44,7 +47,7 @@
                         <center>
                             <h2 class="option-driver">DRIVER</h2>
                             <div class="buttonz">
-                            <a href="#"><img src="img/icon-driver.png" height="170px" width="190px"></a>
+                            <img src="img/icon-driver.png" height="170px" width="190px">
                             </div>
                         </center>
                     </div>   
@@ -122,9 +125,9 @@
                     </div>
                     <div class="col-md-12 btns">
                         <center>
-                            <input id="btn-cancel-rider" class="btn btn-danger button" type="button" value="CANCEL"></input>
+                            <button id="btn-cancel-rider" class="btn btn-danger button" type="button" value="CANCEL">CANCEL</button>
                             &nbsp;&nbsp;&nbsp;
-                            <input id="submit-rider" class="btn btn-dark button" type="submit" value="SUBMIT"></input>
+                            <button id="submit-rider" class="btn btn-dark button" type="button">SUBMIT</button>
                         </center>
                     </div>
                 </form>
@@ -184,17 +187,15 @@
                     </div>
                     <div class="col-md-12 btns">
                         <center>
-                            <input id="btn-cancel-driver" class="btn btn-danger button" type="button" value="CANCEL"></input>
+                            <button id="btn-cancel-driver" class="btn btn-danger button" type="button">CANCEL</button>
                             &nbsp;&nbsp;&nbsp;
-                            <input id="submit-driver" class="btn btn-dark button" type="submit" value="SUBMIT"></input>
+                            <button id="submit-driver" class="btn btn-dark button" type="button">SUBMIT</button>
                         </center>
                     </div>
                 </form>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
 
         <script type="text/javascript">
             $("#form-rider").hide();
@@ -203,27 +204,27 @@
             $(document).ready(function(){
                 $("#btn-rider").click(function(){
                     $("#reg-btns").hide();
-                    $("#form-rider").show();
+                    $("#form-rider").show(100);
                 });
                 $("#btn-driver").click(function(){
                     $("#reg-btns").hide();
-                    $("#form-driver").show();
+                    $("#form-driver").show(100);
                 });
                 $("#btn-cancel-rider").click(function(){
                     $("#form-rider").hide();
-                    $("#reg-btns").show();
+                    $("#reg-btns").show(100);
                 });
                  $("#btn-cancel-driver").click(function(){
                     $("#form-driver").hide();
-                    $("#reg-btns").show();
+                    $("#reg-btns").show(100);
                 });
                  $("#submit-rider").click(function(){
                     $("#form-rider").hide();
-                    $("#thank-you").show();
+                    $("#thank-you").show(100);
                 });
                  $("#submit-driver").click(function(){
                     $("#form-driver").hide();
-                    $("#thank-you").show();
+                    $("#thank-you").show(1000);
                 });
             });
         </script>
