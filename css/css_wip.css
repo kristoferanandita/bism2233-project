@@ -1,0 +1,420 @@
+body{
+	font-family: "Montserrat";
+}
+
+.menu{
+	background-color: #ffffff;
+	height: 8vh;
+	width: 100%;
+}
+/*CONTENT*/
+.content-log{
+    margin-top:0vh;
+    margin-left: 13%; /* Same as the width of the sidebar */
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px -50px;
+	z-index: -1;
+    width:87%;
+    padding-left:0px;
+    padding-right:0px;
+    font-size: 12px;
+}
+
+.landing-bg{
+	background-image: url("../img/bg-unidrives.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px;
+	z-index: -1;
+	height: 92vh;
+}
+
+.mask{
+	height: 92vh;
+	width: 100%;
+	background: rgba(139, 228, 210, 0.75);
+}
+
+.content{
+	width: 55%;
+	margin: auto;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 145px
+}
+
+.statement{
+	font-size: 4rem;
+	font-weight: 900;
+}
+
+.supporting{
+	font-weight: 100;
+	margin-top: 22px;
+}
+
+.btn-landing{
+	width: 230px;
+	height: 70px;
+	font-size: 1.6rem;
+	margin-top: 15px;
+}
+
+.features{
+	height: 92vh;
+}
+
+.row{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.feature{
+	text-align: center;
+	margin-top: 35px;
+	padding: 20px 40px 0px 40px;
+}
+
+.title{
+	font-size: 3.5rem;
+	color: #8BE4D2;
+}
+
+.title-desc{
+	font-size: 1.1rem;
+	color: #8BE4D2;
+	margin-right: 300px;
+	margin-left: 300px;
+}
+
+.heading{
+	text-align: center;
+	margin: 30px 0px 0px 0px;
+}
+
+.description{
+	font-size: 1.4rem;
+	font-weight: 900;
+	margin-top: 35px;
+	color: 	#FEDA52;
+}
+
+.sub-desc{
+	color: #000000;
+}
+
+.box-login{
+	min-height: 200px;
+	width: 35%;
+	background: rgba(255, 255, 255, 0.7);
+	margin: auto;
+	padding: 30px 0px 20px 0px;
+	border-radius: 5px;
+}
+
+.container-bg-reg{
+	background: #8be4d2;
+	min-height: 92vh;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.container-bg-reg h1{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.box-registration{
+	min-height: 350px;
+	width: 50%;
+	background: rgba(255, 255, 255, 0.7);
+	margin: auto;
+	padding: 20px 0px 35px 0px;
+	border-radius: 5px;
+}
+
+.box-registration h1,h2,h3{
+	text-align: center;
+}
+
+.options{
+	margin: 5px 0px 0px 0px;
+}
+
+.option-rider{
+	font-size: 3.5rem;
+	font-weight: 900;
+	color: #31B7D1;
+}
+
+.option-driver{
+	font-size: 3.5rem;
+	font-weight: 900;
+	color: #3BBDA6;
+}
+
+.buttonz img {
+	transition:all .2s ease-in-out;
+}
+
+.buttonz img:hover {
+	transform: scale(1.1); 
+}
+
+.field{
+	width: 75%;
+	margin: auto;
+}
+
+.button{
+	font-size: 1.1rem;
+	width: 30%;
+	height: 40px;
+}
+
+.header{
+	z-index: 999;
+}
+
+#opt {
+    font-size:12px;
+}
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#myText {
+    font-size:12px;
+}
+.sidenav {
+    min-height: 108.7vh; /* Full-height: remove this if you want "auto" height */
+    width: 13%; /* Set the width of the sidebar */
+    position:absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0vh; /* Stay at the top */
+    left: 0;
+    background-color: #484848;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    text-decoration-color:
+}
+.sidenav a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    background-color: #f8f8f8;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.main {
+    
+    padding: 0px;
+    height:100vh; 
+}   
+#map {
+        height: 40vh;
+}
+.btn:active {
+    background-color:#8be4d2;
+    color:black;
+    font-weight:600;
+    outline: none;
+    text-decoration: none;
+}
+.main input:focus {
+    outline:none;
+}
+.row {
+    margin-bottom: 5px;
+}
+.log-title {
+    margin:0px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    padding:5px;
+    padding-top:10px;
+    background-color:#8be4d2;
+    color: black;
+    
+    
+}
+.lefty {
+    
+    margin-top:0px;
+    padding-left:5px;
+    padding-right:2.5px;
+}
+.cont {
+    border: 1px solid #484848;
+    padding:10px;
+    background-image: radial-gradient(#FFFFFF 1%,#f8f8f8 99%);
+    
+}
+
+.righty {
+
+    margin-top:0px;
+    padding-left:2.5px;
+    padding-right:5px;
+}
+
+.middly {
+
+    margin-top:0px;
+    padding-left:2.5px;
+    padding-right:5px;
+}
+.drivers {
+    height:80px;
+    display:flex;
+}
+.driver-detail {
+    padding-left:30px;
+    padding-top:20px;
+    margin-left: -50px;
+    text-decoration: none;
+}
+#all-drivers a {
+    color:black;
+}
+#all-drivers a:hover {
+    text-decoration: none;
+    
+}
+.drivers:hover {
+    background-color:#E8E8E8;
+    text-decoration: none;
+}
+.footer {
+    padding-top:50px;
+    text-align: center;
+    background-color:#8be4d2;
+    height:300px;
+}
+.footer-details {
+
+    font-size: 14px;
+}
+.footer-details p{
+    padding-top: 10px;
+}
+.legal {
+    padding-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 13px;
+}
+.legal a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color:black;
+}
+.legal a:hover {
+    color:tomato;
+}
+.social-media {
+
+    font-size: 40px;
+    color:tomato;
+}
+.social-media a{
+    color:black;
+}
+
+.social-media a:hover{
+    color:tomato;
+}
+.all-earnings {
+    width:100%;
+}
+.earnings {
+    height: 100px;
+    border:1px solid gray;
+    border-top:0px;
+    width: 100%;
+    display:flex;
+}
+.light-bar {
+    width:100%;
+    height:10px;
+    border:1px solid gray;
+    border-bottom:0px;
+}
+.all-ratings {
+    display: flex;
+    flex-direction: column;
+}
+.your-rating {
+    background-color:#484848;
+    height:100px;
+    border:1px solid gray;
+    width:100%;
+    margin:0px 15px;
+    padding-left:125px;
+    padding-top: 7px;
+    color:white;
+}
+.actual-rating {
+    font-size:30px;
+}
+
+
+/*FOOTER*/
+.footer {
+    padding-top:50px;
+    text-align: center;
+    background-color:#8be4d2;
+    height:300px;
+}
+.footer-details {
+
+    font-size: 14px;
+}
+.footer-details p{
+    padding-top: 10px;
+}
+.legal {
+    padding-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 13px;
+}
+.legal a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color:black;
+}
+.legal a:hover {
+    color:tomato;
+
+}
+.social-media {
+
+    font-size: 40px;
+    
+}
+.social-media a{
+    color:black;
+}
+
+.social-media a:hover{
+    color:tomato;
+    
+}

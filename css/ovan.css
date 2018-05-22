@@ -1,15 +1,16 @@
 body{
-	font-family: "Raleway";
+	font-family: "Montserrat";
 }
 
 
 .menu{
 	background-color: #ffffff;
 	height: 8vh;
+    width:100%;
 }
 
-.content{
-    margin-top:8vh;
+.content-log{
+    margin-top:0vh;
     margin-left: 13%; /* Same as the width of the sidebar */
 	min-height: 100vh;
 	background-repeat: no-repeat;
@@ -42,13 +43,13 @@ body{
     font-size:12px;
 }
 .sidenav {
-    min-height: 109vh; /* Full-height: remove this if you want "auto" height */
+    min-height: 108.7vh; /* Full-height: remove this if you want "auto" height */
     width: 13%; /* Set the width of the sidebar */
     position:absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 8vh; /* Stay at the top */
+    top: 0vh; /* Stay at the top */
     left: 0;
-    background-color: #8be4d2;
+    background-color: #484848;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     text-decoration-color:
@@ -88,15 +89,14 @@ body{
 .row {
     margin-bottom: 5px;
 }
-.title {
+.log-title {
     margin:0px;
     margin-bottom: 0px;
     margin-top:0px;
     padding:5px;
     padding-top:10px;
-    background-color:#484848;
-    color: white;
-    border-radius: 0px;
+    background-color:#8be4d2;
+    color: black;
     
     
 }
@@ -150,7 +150,7 @@ body{
 .footer {
     padding-top:50px;
     text-align: center;
-    background-color:#D8D8D8;
+    background-color:#8be4d2;
     height:300px;
 }
 .footer-details {

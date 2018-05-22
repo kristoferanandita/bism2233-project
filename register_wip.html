@@ -4,13 +4,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <link rel="stylesheet" href="css_wip.css">
+        <link rel="stylesheet" href="css/css_wip.css">
         <title>UNIDRIVES - REGISTRATION</title>
     </head>
 
     <body>
         <nav class="navbar navbar-expand-md navbar-light menu">
-                <a class="navbar-brand abs" href="#"><img src="img/logo-unidrives.png"  height="120px"></a>
+                <a class="navbar-brand abs" href="index_wip.html"><img src="img/logo-unidrives.png"  height="120px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,10 +44,27 @@
                         <center>
                             <h2 class="option-driver">DRIVER</h2>
                             <div class="buttonz">
-                            <a href="#""><img src="img/icon-driver.png" height="170px" width="190px"></a>
+                            <a href="#"><img src="img/icon-driver.png" height="170px" width="190px"></a>
                             </div>
                         </center>
                     </div>   
+                </div>
+                <div class="row" id="thank-you">
+                    <div class="col-md-12">
+                        <center>
+                            <h1>Thank you for registering!</h1> 
+                        </center>
+                    </div>
+                    <div class="col-md-12">
+                        <center>
+                            <h3>To start please Log in to your account.</h1> 
+                        </center>
+                    </div>
+                    <div class="col-md-12">
+                        <center>
+                            <button class="btn btn-primary btn-lg"><a href="login_wip.html">Log In</a></button>
+                        </center>
+                    </div>
                 </div>
                 <form id="form-rider" class="row">
                     <div class="col-md-12">
@@ -78,8 +95,6 @@
                           </div>
                           <input type="text" class="form-control" placeholder="UQ faculty">
                         </div>
-                    <!--</div>
-                    <div class="col-md-6">-->
                         <div class="input-group mb-3 field">
                           <div class="input-group-prepend">
                             <span class="input-group-text">
@@ -109,7 +124,7 @@
                         <center>
                             <input id="btn-cancel-rider" class="btn btn-danger button" type="button" value="CANCEL"></input>
                             &nbsp;&nbsp;&nbsp;
-                            <input class="btn btn-dark button" type="submit" value="SUBMIT"></input>
+                            <input id="submit-rider" class="btn btn-dark button" type="submit" value="SUBMIT"></input>
                         </center>
                     </div>
                 </form>
@@ -142,8 +157,6 @@
                           </div>
                           <input type="text" class="form-control" placeholder="UQ faculty">
                         </div>
-                    <!--</div>
-                    <div class="col-md-6">-->
                         <div class="input-group mb-3 field">
                           <div class="input-group-prepend">
                             <span class="input-group-text">
@@ -173,7 +186,7 @@
                         <center>
                             <input id="btn-cancel-driver" class="btn btn-danger button" type="button" value="CANCEL"></input>
                             &nbsp;&nbsp;&nbsp;
-                            <input class="btn btn-dark button" type="submit" value="SUBMIT"></input>
+                            <input id="submit-driver" class="btn btn-dark button" type="submit" value="SUBMIT"></input>
                         </center>
                     </div>
                 </form>
@@ -186,6 +199,7 @@
         <script type="text/javascript">
             $("#form-rider").hide();
             $("#form-driver").hide();
+            $("#thank-you").hide();
             $(document).ready(function(){
                 $("#btn-rider").click(function(){
                     $("#reg-btns").hide();
@@ -202,6 +216,14 @@
                  $("#btn-cancel-driver").click(function(){
                     $("#form-driver").hide();
                     $("#reg-btns").show();
+                });
+                 $("#submit-rider").click(function(){
+                    $("#form-rider").hide();
+                    $("#thank-you").show();
+                });
+                 $("#submit-driver").click(function(){
+                    $("#form-driver").hide();
+                    $("#thank-you").show();
                 });
             });
         </script>
