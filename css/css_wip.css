@@ -1,6 +1,8 @@
 body{
 	font-family: "Montserrat";
+    overflow-x: hidden;
 }
+
 
 .menu{
 	background-color: #ffffff;
@@ -23,7 +25,7 @@ body{
 }
 
 .landing-bg{
-	background-image: url("../img/bg-unidrives.jpg");
+	background-image: url("../images/bg-unidrives.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0px;
@@ -61,7 +63,10 @@ body{
 	font-size: 1.6rem;
 	margin-top: 15px;
 }
-
+.btn-landing a {
+    text-decoration: none;
+    color:white;
+}
 .features{
 	height: 92vh;
 }
@@ -113,7 +118,66 @@ body{
 	padding: 30px 0px 20px 0px;
 	border-radius: 5px;
 }
+.header-color {
+    background-color:#8be4d2;
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+.container-abt-us{
+	background: white;
+	min-height: 92vh;
+	padding-top: 25px;
+	padding-bottom: 50px;
+    margin-bottom:100px;
+}
+.abt-us-header {
+    padding: 50px 200px;
+    text-align: center;
+}
+.abt-us-content-1 {
+    margin-top:80px;
+}
 
+.abt-us-content-2 {
+    margin-top:80px;
+}
+.abt-us-testimony {
+    margin-top:100px;
+    margin-bottom:50px;
+    text-align: center;
+    height:350px;
+}
+.testi-1 {
+    padding:80px 20px;
+    padding-left:35px;
+}
+.testi-2 {
+
+    padding:40px 20px;
+}
+.testi-3 {
+    padding:80px 20px;
+    padding-right:35px;
+}
+.testi-left {
+    padding:20px 30px;
+    height:150px;
+    border:1px solid black;
+    border-radius:5px;
+}
+.testi-center {
+    padding:10px 30px;
+    height:230px;
+    border:1px solid black;
+    border-radius:5px;
+}
+.testi-right {
+    padding:20px 30px;
+    height:150px;
+    border:1px solid black;
+    border-radius:5px;
+}
 .container-bg-reg{
 	background: #8be4d2;
 	min-height: 92vh;
@@ -377,7 +441,7 @@ body{
 
 /*FOOTER*/
 .footer {
-    padding-top:50px;
+    padding-top:30px;
     text-align: center;
     background-color:#8be4d2;
     height:300px;
@@ -387,7 +451,7 @@ body{
     font-size: 14px;
 }
 .footer-details p{
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .legal {
     padding-top: 10px;
@@ -417,4 +481,56 @@ body{
 .social-media a:hover{
     color:tomato;
     
+}
+.error-message {
+    color:red;
+    margin-left:75px;
+}
+.thank-you-btn a {
+    text-decoration: none;
+    color:white;
+}
+.thank-you-btn {
+    margin-top:40px;
+    font-size: 36px;
+}
+.btn-login a{
+    text-decoration: none;
+    color:white;
+}
+.btn-login {
+    height:50px;
+    width: 155px;
+    font-size: 14px;
+}
+.disclaimer {
+    padding:0px;
+    margin:0px;
+}
+.disclaimer p{
+    padding:0px;
+    margin:0px;
+}
+.footer-spc {
+    height:140px;
+}
+#footer-logo {
+ margin-top:20px;
+}
+.legal-spc {
+    margin-top: -10px;
+    margin-left:-40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 11px;
+}
+.legal-spc a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color:black;
+}
+.legal-spc a:hover {
+    color:tomato;
+
 }
