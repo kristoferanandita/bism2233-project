@@ -10,6 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 		<title>Unidrives - Rider</title>
 	</head>
@@ -25,7 +26,7 @@
                         <p>Rider</p>
                     </center>
                     <hr style="margin-bottom:0px;margin-top:20px;">
-                    <a href="#"><i class="fas fa-tachometer-alt"></i>  Dashboard</a>
+                    <a href="rider-dashboard.html"><i class="fas fa-tachometer-alt"></i>  Dashboard</a>
                     <a href="#" style="background-color:#f8f8f8;"><i class="fas fa-rocket"></i>  Book a Ride</a>
                     <a href="#"><i class="fas fa-archive"></i>  History</a>
                     <a href="#"><i class="fas fa-user-circle"></i>  Profile</a>
@@ -141,17 +142,17 @@
                                 <div id="all-drivers">
 
                                     <div class=" row" style="">
-                                        <a href="#">
-                                            <div class="drivers">
+                                        <a href="#" id="scenario-driver" onclick="driverchoose();">
+                                            <div class="drivers-spc">
                                                 <div class='col-md-3' style="">
                                                     <img src="images/icon-driver.png" width=80% style ="margin-top:6px;">
                                                 </div>
                                                 <div class="driver-detail col-md-9" style="">
                                                     <div class="row" style="height:25px;">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-8">
                                                             <h5>Lind L. Tailor</h5>
                                                         </div>
-                                                        <div class="col-md-6" style="padding-top:3px;">
+                                                        <div class="col-md-4" style="padding-top:3px;">
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
@@ -167,6 +168,7 @@
                                                 </div>
                                             </div>
                                         </a>
+       
                                         <a href="#">
                                             <div class="drivers">
                                                 <div class='col-md-3' style="">
@@ -174,10 +176,10 @@
                                                 </div>
                                                 <div class="driver-detail col-md-9" style="">
                                                     <div class="row" style="height:25px;">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-8">
                                                             <h5>Raye Penber</h5>
                                                         </div>
-                                                        <div class="col-md-6" style="padding-top:3px;">
+                                                        <div class="col-md-4" style="padding-top:3px;">
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
@@ -199,10 +201,10 @@
                                                 </div>
                                                 <div class="driver-detail col-md-9" style="">
                                                     <div class="row" style="height:25px;">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-8">
                                                             <h5>Mihael Keehl</h5>
                                                         </div>
-                                                        <div class="col-md-6" style="padding-top:3px;">
+                                                        <div class="col-md-4" style="padding-top:3px;">
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
@@ -225,10 +227,10 @@
                                                 </div>
                                                 <div class="driver-detail col-md-9" style="">
                                                     <div class="row" style="height:25px;">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-8">
                                                             <h5>Clifford D. Louis</h5>
                                                         </div>
-                                                        <div class="col-md-6" style="padding-top:3px;">
+                                                        <div class="col-md-4" style="padding-top:3px;">
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
@@ -251,10 +253,10 @@
                                                 </div>
                                                 <div class="driver-detail col-md-9" style="">
                                                     <div class="row" style="height:25px;">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-8">
                                                             <h5>Bud Walker</h5>
                                                         </div>
-                                                        <div class="col-md-6" style="padding-top:3px;">
+                                                        <div class="col-md-4" style="padding-top:3px;">
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
@@ -277,10 +279,10 @@
                                                 </div>
                                                 <div class="driver-detail col-md-9" style="">
                                                     <div class="row" style="height:25px;">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-8">
                                                             <h5>Patrick Spencer</h5>
                                                         </div>
-                                                        <div class="col-md-6" style="padding-top:3px;">
+                                                        <div class="col-md-4" style="padding-top:3px;">
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
                                                             <i class="fas fa-star" style="color:gold;"></i>
@@ -296,6 +298,32 @@
                                                 </div>
                                             </div>
                                         </a>
+                                        <div class="driver-confirmation col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h6><b>Interests</b></h6>
+                                                    <ul>
+                                                        <li>Basketball</li>
+                                                        <li>Soccer</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h6><b>Hobbies</b></h6>
+                                                    <ul>
+                                                        <li>Basketball</li>
+                                                        <li>Soccer</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <button class="btn btn-primary btn-confirmation" id="confirm-confirmation" onclick="confirmconfirm();">Confirm</button>
+                                                    </div>
+                                                    <div class="row">
+                                                        <button class="btn btn-danger btn-confirmation" id="cancel-confirmation" onclick="cancelconfirm();">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
                                     </div>
                                 </div>
                             </div>
@@ -341,6 +369,8 @@
         $("#mapper").hide();
         $("#all-drivers").hide();
         $("#myText").hide();
+        $(".driver-confirmation").hide();
+
         function show() {
             var am = $("#inputGroupSelect03").val();
             var address = $("#myText").val();
@@ -357,18 +387,15 @@
                 $(".error-time").html("")
             }
             if ((hour != "Hour") && (minute != "Minute") && (am != "AM/PM") && (address != "")){
-                $("#all-drivers").show(200);
+                $("#all-drivers").fadeIn(250);
             } else {
-                
-               
-                
-                
+     
             }
             
         }
         function butt1() {
-            $("#mapper").show(200);
-            $("#myText").show(200);
+            $("#mapper").fadeIn(500);
+            $("#myText").fadeIn(500);
             
              $(".opt1").css("background", "lightgray")
             flag = "to"
@@ -379,8 +406,8 @@
             
         }
         function butt2() {
-            $("#mapper").show(200);
-            $("#myText").show(200);
+            $("#mapper").fadeIn(500);
+            $("#myText").fadeIn(500);
              $(".opt2").css("background", "lightgray")
             flag = "from"
             if (flag=="from"){
@@ -412,15 +439,26 @@
             }
             if ((hour != "Hour") && (minute != "Minute") && (am != "AM/PM") && (address != "")){
                 $('#price-esti').html("<h6>$8</h6>")
-            } else {
-                
-               
-                
-                
-            }
-            
+            }    
+        }
+        function driverchoose(){
+            $(".drivers").fadeToggle(200);
+            $(".driver-confirmation").fadeToggle(200);
+        }
+        function cancelconfirm(){
+            $(".drivers").fadeIn(250);
+            $(".driver-confirmation").fadeOut();
+        }
+        function confirmconfirm(){
+            $("#mapper").hide();
+            $("#all-drivers").hide();
+            $("#myText").hide();
+            $("#myText").val("");
+            $("#inputGroupSelect03").val("AM/PM");
+            $("#inputGroupSelect01").val("Hour");
+            $("#inputGroupSelect02").val("Minute"); 
+            swal("Nice!","Your driver is on the way","success");
             
         }
- 
     </script>
 </html>

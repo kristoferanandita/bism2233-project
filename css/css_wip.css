@@ -1,3 +1,4 @@
+/*MAIN COLOR = #8BE4D2*/
 body{
 	font-family: "Montserrat";
     overflow-x: hidden;
@@ -66,6 +67,10 @@ body{
 .btn-landing a {
     text-decoration: none;
     color:white;
+}
+.btn-confirmation {
+    width:100%;
+    font-size:12px;
 }
 .features{
 	height: 92vh;
@@ -161,21 +166,24 @@ body{
     padding-right:35px;
 }
 .testi-left {
+    background-color: #f8f8f8;
     padding:20px 30px;
     height:150px;
-    border:1px solid black;
+    border:1px solid #8BE4D2 ;
     border-radius:5px;
 }
 .testi-center {
+    background-color: #f8f8f8;
     padding:10px 30px;
     height:230px;
-    border:1px solid black;
+    border:1px solid #8BE4D2;
     border-radius:5px;
 }
 .testi-right {
+    background-color: #f8f8f8;
     padding:20px 30px;
     height:150px;
-    border:1px solid black;
+    border:1px solid #8BE4D2;
     border-radius:5px;
 }
 .container-bg-reg{
@@ -347,6 +355,10 @@ body{
     height:80px;
     display:flex;
 }
+.drivers-spc {
+    height:80px;
+    display:flex;
+}
 .driver-detail {
     padding-left:30px;
     padding-top:20px;
@@ -363,6 +375,33 @@ body{
 .drivers:hover {
     background-color:#E8E8E8;
     text-decoration: none;
+}
+.drivers-spc:hover {
+    background-color:#E8E8E8;
+    text-decoration: none;
+}
+.driver-confirmation {
+    
+    background-color: #F0F0F0;
+    margin-top:10px;
+    border:1px solid #8BE4D2;
+    border-radius:5px;
+    padding-top:15px;
+    
+}
+#your-driver-location {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:10px;
+    font-size:18px;
+    padding-left:10px;
+    padding-top:12px;
+    padding-bottom: 0px;
+    position: absolute;
+    border-radius: 3px;
+    background-color: white;
+    width:200px;
+    height:50px;
+    
 }
 .footer {
     padding-top:50px;
