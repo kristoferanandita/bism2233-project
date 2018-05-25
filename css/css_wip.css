@@ -283,11 +283,12 @@ body{
     padding: 10px 8px 10px 16px;
     text-decoration: none;
     font-size: 16px;
-    color: #818181;
+    color: #f8f8f8;
     display: block;
 }
 .sidenav a:hover {
     background-color: #f8f8f8;
+    color:#484848;
 }
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
