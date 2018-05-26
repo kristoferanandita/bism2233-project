@@ -4,6 +4,10 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 .menu{
 	background-color: #ffffff;
@@ -158,10 +162,10 @@ body{
     margin-top:80px;
 }
 .abt-us-testimony {
-    margin-top:100px;
-    margin-bottom:50px;
+    margin-top:50px;
+    margin-bottom:0px;
     text-align: center;
-    height:350px;
+    height:80vh;
 }
 .testi-1 {
     padding:80px 20px;
