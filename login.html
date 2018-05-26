@@ -55,8 +55,8 @@
                     </div>
                     <div class="col-md-12 btns">
                         <center>
-                            <button class="btn btn-dark button btn-login" type="submit" style="padding-left:8px;"><a href="driver.html" id="login-driver">SIGN IN AS DRIVER</a></button>
-                            <button class="btn btn-dark button btn-login" type="submit"><a href="rider.html" id="login-rider">SIGN IN AS RIDER</a></button>
+                            <button class="btn btn-dark button btn-login btn-login-driver" type="submit" style="padding-left:8px;"><a href="javascript:void(0)" id="login-driver">SIGN IN AS DRIVER</a></button>
+                            <button class="btn btn-dark button btn-login btn-login-rider" type="submit"><a href="javascript:void(0)" id="login-rider">SIGN IN AS RIDER</a></button>
                         </center>
                 </form>
 			</div>
@@ -81,16 +81,20 @@
 	</body>
     <script>
      $(document).ready(function(){
-            $(".btn-login").click(function(){
-                if (($(".login-email").val() == "") && ($(".login-password").val() == "") ){
-                    $("a#login-driver").attr("href","#")
-                    $("a#login-rider").attr("href", "#" )
-                    
-                    $(".error-message").html("*Please fill in the required fields") 
+            $(".btn-login-driver").click(function(){
+                if (($(".login-email").val() != "") && ($(".login-password").val() != "") ){
+                    location.href = 'driver.html'                    
                 } else {
-                      
+                     $(".error-message").html("*Please fill in the required fields")      
                 }
-     });
+            });
+            $(".btn-login-rider").click(function(){
+                if (($(".login-email").val() != "") && ($(".login-password").val() != "") ){
+                    location.href = 'rider.html'                    
+                } else {
+                     $(".error-message").html("*Please fill in the required fields")      
+                }
+            });
      });
     </script>
 </html>
