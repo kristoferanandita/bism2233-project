@@ -129,6 +129,16 @@ body{
     height:100%;
     width:100%;
 }
+#price-esti {
+    border:1px solid black;
+    border-radius:5px;
+    margin-left:2px;
+    height:40px;
+    margin-top:-10px;
+    padding-top:8px;
+    text-align: center;
+    font-size:14px;
+}
 .container-abt-us{
 	background: white;
 	min-height: 92vh;
@@ -470,7 +480,7 @@ body{
     border:1px solid gray;
     width:100%;
     margin:0px 15px;
-    padding-left:125px;
+    padding-left:190px;
     padding-top: 7px;
     color:white;
 }

@@ -23,7 +23,7 @@
                     <center>
                         <img src ="images/icon-rider.png" width="60%" style="padding-bottom:5px;">
                         <span style="color:white;">
-                            <h5><b>Nate River</b></h5>
+                            <h5><b>Zoey River</b></h5>
                             <p>Rider</p>
                         </span>
                     </center>
@@ -122,10 +122,12 @@
                                     <button style="padding:10px 5px" id="opt" class="btn btn-primary find-driver" type ="button" onclick="show();">Find a Driver!</button>
                                  </div>
                                  <div class="col-md-2">
-                                    <button style="padding:10px 5px;margin-left:10px;" id="opt" class="btn btn-primary" type="button" onclick="price();">Price Estimate</button>
+                                    <button style="padding:10px 5px;margin-left:10px;" id="opt" class="btn btn-primary" type="button" onclick="price();">Fare Estimate</button>
                                  </div>
-                                <div class="col-md-1"style="margin-left:25px;padding-top:10px;">
-                                    <div id="price-esti"></div>
+                                <div class="col-md-7"style="margin-left:25px;padding-top:10px;">
+                                    <div id="price-esti">
+                                        <p>Your Fare Estimate is $6.4</p>
+                                    </div>
                                 </div>
                             </div>
                                 
@@ -372,6 +374,7 @@
         $("#all-drivers").hide();
         $("#myText").hide();
         $(".driver-confirmation").hide();
+        $("#price-esti").hide();
 
         function show() {
             var am = $("#inputGroupSelect03").val();
@@ -440,7 +443,7 @@
                 $(".error-time").html("")
             }
             if ((hour != "Hour") && (minute != "Minute") && (am != "AM/PM") && (address != "")){
-                $('#price-esti').html("<h6>$8</h6>")
+                $('#price-esti').fadeIn(100);
             }    
         }
         function driverchoose(){
