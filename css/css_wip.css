@@ -143,12 +143,18 @@ html{
     text-align: center;
     font-size:14px;
 }
-.container-abt-us{
+.container-abt-us {
 	background: white;
 	min-height: 92vh;
 	padding-top: 25px;
 	padding-bottom: 50px;
     margin-bottom:100px;
+}
+.container-disclaimer {
+    height:600px;
+    background-color: white;
+    text-align: center;
+    padding:70px 50px;
 }
 .abt-us-header {
     padding: 50px 200px;
