@@ -18,8 +18,9 @@
 
 	<body>
 	
-
+<!--Content Start-->
             <div class="content-log container-fluid">
+<!--Sidenav Start-->
                 <div class="sidenav">
                     <center>
                         <img src ="images/icon-rider.png" width="60%" style="padding-bottom:5px;">
@@ -36,6 +37,7 @@
                     <hr style="margin:0px;">
                     <a href="index.html"><i class="fas fa-power-off"></i> Logout</a>
                 </div> 
+<!--Sidenav End-->
                 <div class="row">
                     <div class='log-title col-sm'>
                         <center><h3>Book a Ride</h3></center>
@@ -43,6 +45,7 @@
                 </div>
                 <div class="main">
                     <div class="row">
+<!--Left Section Inner Content Start-->
                     <div class="lefty col-md-6">
                         <div class="cont shadow-sm p-3 mb-5 bg-white rounded">
                             <div class="row">
@@ -57,8 +60,8 @@
                                 <div class="error-location"></div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <button id="opt" class="opt1 btn btn-outline-secondary" type="button" onclick="butt1();">To Campus</button>
-                                        <button id="opt" class="opt2 btn btn-outline-secondary" type="button" onclick="butt2();">From Campus</button>
+                                        <button id="opt" class="opt1 btn btn-outline-secondary" type="button" onclick="toCampus();">To Campus</button>
+                                        <button id="opt" class="opt2 btn btn-outline-secondary" type="button" onclick="fromCampus();">From Campus</button>
                                     </div>
                                     <input name="bism" type="text" id ="myText" class="form-control"  aria-label="" aria-describedby="basic-addon1">
                                 </div>
@@ -127,12 +130,14 @@
                                  </div>
                                 <div class="col-md-7"style="margin-left:25px;padding-top:10px;">
                                     <div id="price-esti">
-                                        <p>Your Fare Estimate is $6.4</p>
+                                        <p>Your Fare Estimate is $2.65</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+<!--Left Section Inner Content End-->
+<!--Right Section Inner Content Start-->
                         <div class="righty col-md-6">
                             <div class="cont shadow-sm p-3 mb-5 bg-white rounded">
                                 <div class="row">
@@ -330,11 +335,12 @@
                                 </div>
                             </div>
                         </div>
-                      
-<!--                        here-->
+<!--Right Section Inner Content End-->
                     </div>
                 </div>
             </div>
+<!--Content End-->
+<!--Footer Start-->
             <div class="footer container-fluid">
                 <div class="row">
                     <div class="footer-details col-md">
@@ -364,6 +370,7 @@
                     </div>
                 </div>            
             </div>
+<!--Footer End-->
 	</body>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxnaq11J1ZmAOz5QZ5nRG2oDF9eegw5qQ&callback=initMap"
     async defer></script>
@@ -398,7 +405,7 @@
             }
             
         }
-        function butt1() {
+        function toCampus() {
             $("#mapper").fadeIn(500);
             $("#myText").fadeIn(500);
             
@@ -410,7 +417,7 @@
             $('#myText').attr('placeholder','Where would you like to be picked up?');
             
         }
-        function butt2() {
+        function fromCampus() {
             $("#mapper").fadeIn(500);
             $("#myText").fadeIn(500);
              $(".opt2").css("background", "lightgray")

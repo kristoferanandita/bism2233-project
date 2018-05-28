@@ -13,6 +13,7 @@
     </head>
 
     <body>
+<!--Navbar Start-->
         <nav class="navbar navbar-expand-md navbar-light menu">
                 <a class="navbar-brand abs" href="index.html"><img src="images/logo-unidrives.png"  height="120px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
@@ -29,6 +30,8 @@
                     </ul>
                 </div>
             </nav>
+<!--Navbar End-->
+<!--Content Start-->
         <div class="container-bg-reg">
             <center><h1>REGISTRATION</h1></center>
             <div class="box-registration">
@@ -71,7 +74,7 @@
                         </center>
                     </div>
                 </div>
-<!--FORM RIDER-->
+<!--Rider Form Start-->
                 <form id="form-rider" class="row">
                     <div class="col-md-12">
                         <h3><strong>Rider</strong> - Account Registration</h3><br>
@@ -136,6 +139,8 @@
                         </center>
                     </div>
                 </form>
+<!--Rider Form End-->
+<!--Driver Form Start-->
                 <form id="form-driver" class="row">
                     <div class="col-md-12">
                         <h3><strong>Driver</strong> - Account Registration</h3><br>
@@ -200,9 +205,12 @@
                         </center>
                     </div>
                 </form>
+<!--Driver Form End-->
         </div>
  
         </div>
+<!--Content End-->
+<!--Footer Start-->
         <div class='footer-spc row'>
             <div class='col-md-12'>
                 <img id="footer-logo" src="images/logo-unidrives-footer.png"  height="35%">
@@ -219,7 +227,8 @@
                     <p style="font-size:11px;margin:0px 0px 20px 20px;">*This page is fictional. It is for assessment purposes only in the course of BISM2233, eBusiness systems and strategy, at The University of Queensland.</p>
             </div>
         </div>
-
+<!--Footer End-->
+        </body>
         <script type="text/javascript">
             $("#form-rider").hide();
             $("#form-driver").hide();
@@ -249,8 +258,7 @@
                         $("#thank-you").show(100); 
                      } else {
                         $(".error-message").html("*Please fill in the required fields")
-                     }
-                    
+                     }  
                 });
                 $("#submit-driver").click(function(){
                      console.log()
@@ -261,10 +269,8 @@
                      } else {
                         $(".error-message").html("*Please fill in the required fields")
                      }
-                    
-                });
-                
+                });  
             });
         </script>
-    </body>
+  
 </html>

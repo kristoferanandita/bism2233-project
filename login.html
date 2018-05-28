@@ -11,27 +11,31 @@
           <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<title>UNIDRIVES - LOGIN</title>
 	</head>
-
 	<body>
+<!--Navbar Start-->
 		<nav class="navbar navbar-expand-md navbar-light sticky-top menu">
-			    <a class="navbar-brand abs" href="index.html"><img src="images/logo-unidrives.png"  height="120px"></a>
-			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-			        <span class="navbar-toggler-icon"></span>
-			    </button>
-			    <div class="navbar-collapse collapse" id="collapsingNavbar">
-			        <ul class="navbar-nav ml-auto">
-			            <li class="nav-item">
-			                <a class="nav-link" href="aboutus.html">About Us</a>
-			            </li>
-			            <li class="nav-item">
-			                <a class="nav-link" href="login.html" style="color:black">Login</a>
-			            </li>
-			        </ul>
-			    </div>
-			</nav>
+            <a class="navbar-brand abs" href="index.html"><img src="images/logo-unidrives.png"  height="120px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" style="color:black">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+<!--Navbar End-->
+<!--Content Start-->
 		<div class="container-bg-reg">
-			<br><br>
+			<br>
+            <br>
 			<center><h1>LOGIN</h1></center>
+            <!--Login Form Start-->
 			<div class="box-login">
 				<form id="form-rider" class="row">
                     <div class="col-md-12">
@@ -59,27 +63,31 @@
                             <button class="btn btn-dark button btn-login btn-login-driver" type="button" style="padding-left:8px;"><a href="javascript:void(0)" id="login-driver">SIGN IN AS DRIVER</a></button>
                             <button class="btn btn-dark button btn-login btn-login-rider" type="button"><a href="javascript:void(0)" id="login-rider">SIGN IN AS RIDER</a></button>
                         </center>
-                </form>
-			</div>
+                    </div>
+                </form>     
+            </div>
+            <!--Login Form End-->
 		  </div>
+<!--Content End-->
+<!--Footer Start-->
+<div class='footer-spc row'>
+    <div class='col-md-12'>
+        <img id="footer-logo" src="images/logo-unidrives-footer.png"  height="35%">
+        <hr style="background-color:#b8b8b8;">
+    </div>
+      <div class="legal-spc col-md-4">
+            <a href='#'><p>Legal Terms </p></a>
+            <p> | </p>
+            <a href='disclaimer.html'><p>Disclaimer</p></a>
+            <p> | </p>
+            <a href='#'><p>Terms &amp; Conditions</p></a>
         </div>
-        <div class='footer-spc row'>
-            <div class='col-md-12'>
-                <img id="footer-logo" src="images/logo-unidrives-footer.png"  height="35%">
-                <hr style="background-color:#b8b8b8;">
-            </div>
-              <div class="legal-spc col-md-4">
-                    <a href='#'><p>Legal Terms </p></a>
-                    <p> | </p>
-                    <a href='disclaimer.html'><p>Disclaimer</p></a>
-                    <p> | </p>
-                    <a href='#'><p>Terms &amp; Conditions</p></a>
-                </div>
-            <div class="disclaimer col-md-12">
-                    <p style="font-size:11px;margin:0px 0px 20px 20px;">*This page is fictional. It is for assessment purposes only in the course of BISM2233, eBusiness systems and strategy, at The University of Queensland.</p>
-            </div>
-        </div>
-	</body>
+    <div class="disclaimer col-md-12">
+            <p style="font-size:11px;margin:0px 0px 20px 20px;">*This page is fictional. It is for assessment purposes only in the course of BISM2233, eBusiness systems and strategy, at The University of Queensland.</p>
+    </div>
+</div>
+<!--Footer End-->
+    </body>
     <script>
      $(document).ready(function(){
             $(".btn-login-driver").click(function(){
